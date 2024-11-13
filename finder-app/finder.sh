@@ -7,6 +7,7 @@ fi
 echo "$1"
 echo "$2"
 
+
 filesdir="$1"
 searchstr="$2"
 
