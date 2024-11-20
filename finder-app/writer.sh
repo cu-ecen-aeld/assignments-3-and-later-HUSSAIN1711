@@ -43,4 +43,3 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "File '$writefile' created with content: '$writestr'"
-

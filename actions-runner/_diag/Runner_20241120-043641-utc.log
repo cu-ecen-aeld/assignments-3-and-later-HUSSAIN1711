@@ -1,0 +1,92 @@
+[2024-11-20 04:36:41Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'Credentials': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'Runner': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.runner'
+[2024-11-20 04:36:41Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2024-11-20 04:36:41Z INFO Listener] RuntimeInformation: Linux 6.8.0-49-generic #49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2.
+[2024-11-20 04:36:41Z INFO Listener] Version: 2.320.0
+[2024-11-20 04:36:41Z INFO Listener] Commit: 78f21670b4a58aff19b5189207f54eb2bee324d1
+[2024-11-20 04:36:41Z INFO Listener] Culture: en-US
+[2024-11-20 04:36:41Z INFO Listener] UI Culture: en-US
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO Listener] Validating directory permissions for: '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO CommandLineParser] Parse
+[2024-11-20 04:36:41Z INFO CommandLineParser] Parsing 3 args
+[2024-11-20 04:36:41Z INFO CommandLineParser] parsing argument
+[2024-11-20 04:36:41Z INFO CommandLineParser] HasArgs: False
+[2024-11-20 04:36:41Z INFO CommandLineParser] Adding Command: remove
+[2024-11-20 04:36:41Z INFO CommandLineParser] parsing argument
+[2024-11-20 04:36:41Z INFO CommandLineParser] HasArgs: True
+[2024-11-20 04:36:41Z INFO CommandLineParser] arg: token
+[2024-11-20 04:36:41Z INFO CommandLineParser] parsing argument
+[2024-11-20 04:36:41Z INFO CommandLineParser] HasArgs: True
+[2024-11-20 04:36:41Z INFO CommandLineParser] Adding option 'token': '***'
+[2024-11-20 04:36:41Z INFO Listener] Arguments parsed
+[2024-11-20 04:36:41Z INFO Runner] ExecuteCommand
+[2024-11-20 04:36:41Z INFO ConfigurationStore] currentAssemblyLocation: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin/Runner.Listener.dll
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] binPath: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] RootFolder: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'Runner': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.runner'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] ConfigFilePath: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.runner
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'Credentials': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] CredFilePath: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials_migrated'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] MigratedCredFilePath: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials_migrated
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:41Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:41Z INFO HostContext] Well known config file 'Service': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.service'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] ServiceConfigFilePath: /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.service
+[2024-11-20 04:36:41Z INFO CommandSettings] Flag 'help': 'False'
+[2024-11-20 04:36:41Z INFO CommandSettings] Flag 'version': 'False'
+[2024-11-20 04:36:41Z INFO CommandSettings] Flag 'commit': 'False'
+[2024-11-20 04:36:41Z INFO CommandSettings] Flag 'check': 'False'
+[2024-11-20 04:36:41Z INFO CommandSettings] Command 'configure': 'False'
+[2024-11-20 04:36:41Z INFO CommandSettings] Command 'remove': 'True'
+[2024-11-20 04:36:41Z INFO CommandSettings] Flag 'local': 'False'
+[2024-11-20 04:36:41Z INFO ConfigurationStore] IsServiceConfigured()
+[2024-11-20 04:36:41Z INFO ConfigurationStore] IsServiceConfigured: False
+[2024-11-20 04:36:41Z INFO ConfigurationStore] IsConfigured()
+[2024-11-20 04:36:41Z INFO ConfigurationStore] IsConfigured: True
+[2024-11-20 04:36:41Z INFO ConfigurationStore] HasCredentials()
+[2024-11-20 04:36:41Z INFO ConfigurationStore] stored True
+[2024-11-20 04:36:41Z INFO ConfigurationStore] Read setting file: 320 chars
+[2024-11-20 04:36:41Z INFO CommandSettings] Arg 'token': '***'
+[2024-11-20 04:36:41Z INFO CommandSettings] Remove token from Arg dictionary.
+[2024-11-20 04:36:42Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (EAB2:4890C:3D33F53:3DB0063:673D675A)
+[2024-11-20 04:36:42Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2024-11-20 04:36:42Z INFO RunnerServer] EstablishVssConnection
+[2024-11-20 04:36:42Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2024-11-20 04:36:43Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-11-20 04:36:43Z INFO RunnerServer] EstablishVssConnection
+[2024-11-20 04:36:43Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-11-20 04:36:43Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-11-20 04:36:43Z INFO RunnerServer] EstablishVssConnection
+[2024-11-20 04:36:43Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-11-20 04:36:43Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-11-20 04:36:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-11-20 04:36:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-11-20 04:36:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-11-20 04:36:45Z INFO Terminal] WRITE LINE: 
+[2024-11-20 04:36:45Z INFO ConfigurationStore] IsConfigured()
+[2024-11-20 04:36:45Z INFO ConfigurationStore] IsConfigured: True
+[2024-11-20 04:36:45Z INFO ConfigurationStore] HasCredentials()
+[2024-11-20 04:36:45Z INFO ConfigurationStore] stored True
+[2024-11-20 04:36:45Z INFO HostContext] Well known directory 'Bin': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/bin'
+[2024-11-20 04:36:45Z INFO HostContext] Well known directory 'Root': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner'
+[2024-11-20 04:36:45Z INFO HostContext] Well known config file 'RSACredentials': '/home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials_rsaparams'
+[2024-11-20 04:36:45Z INFO RSAFileKeyManager] Deleting RSA key parameters file /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/actions-runner/.credentials_rsaparams
+[2024-11-20 04:36:45Z INFO Terminal] WRITE LINE: 
+[2024-11-20 04:36:45Z INFO Listener] Runner execution has finished with return code 0
