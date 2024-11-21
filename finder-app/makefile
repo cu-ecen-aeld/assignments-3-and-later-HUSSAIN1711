@@ -15,7 +15,7 @@ TARGET := writer
 
 OBJS := writer.o 
 
-all: $(TARGET) check_file_type
+all: $(TARGET)
 
 $(TARGET): writer.o 
 	$(CC) $(LDFLAGS) -o $(TARGET) writer.o 
@@ -23,10 +23,10 @@ $(TARGET): writer.o
 writer.o: writer.c
 	$(CC) $(CFLAGS) -c writer.c
 
-check_file_type:
-	@echo "Checking file type of $(TARGET)..." > /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
-	@file $(TARGET) >> /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
-	@echo "Cross-compilation verification completed." >> /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
+#check_file_type:
+	#@echo "Checking file type of $(TARGET)..." > /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
+	#@file $(TARGET) >> /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
+	#@echo "Cross-compilation verification completed." >> /home/hussain/Coding/Github/assignment-1-HUSSAIN1711/assignments/assignment2/fileresult.txt
 
 clean: 
 	rm -f $(TARGET) $(OBJS)
