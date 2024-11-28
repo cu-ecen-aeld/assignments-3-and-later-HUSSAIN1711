@@ -1,4 +1,12 @@
 #include "systemcalls.h"
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
 
 /**
  * @param cmd the command to execute with system()
@@ -11,13 +19,25 @@ bool do_system(const char *cmd)
 {
 
 /*
- * TODO  add your code here
+ * TODO z add your code here
  *  Call the system() function with the command set in the cmd
  *   and return a boolean true if the system() call completed with success
  *   or false() if it returned a failure
 */
+    //Main code
+    int res;
 
-    return true;
+    if(cmd == NULL){
+	    return false;
+    }
+
+    res = system(cmd);
+    if(res==-1){
+	    return false;
+    }
+    else{
+    	return WEXITSTATUS(res) == 0;
+    }
 }
 
 /**
@@ -61,6 +81,34 @@ bool do_exec(int count, ...)
 
     va_end(args);
 
+    pid_t pid = fork();
+    if(pid == -1){
+	    
+	    perror("fork");
+	    return false;
+    }
+
+    if(pid == 0){
+	    execv(command[0], command);
+
+	    perror("execv");
+	    exit(EXIT_FAILURE);
+    }
+    else{
+	    int status;
+	    if(waitpid(pid, &status, 0) == -1){
+		    perror("waitpid");
+		    return false;
+	    }
+
+	    if(WIFEXITED(status) && WEXITSTATUS(status) == 0) {
+		    return true;
+	    }
+	    else{
+		    fprintf(stderr, "Command failed with exit status %d\n", WEXITSTATUS(status));
+		    return false;
+	    }
+    }
     return true;
 }
 
@@ -94,6 +142,49 @@ bool do_exec_redirect(const char *outputfile, int count, ...)
 */
 
     va_end(args);
+	pid_t pid = fork();
+	if(pid ==-1){
+		perror("fork");
+		return false;
+	}
+	if(pid == 0){
+	    int fd = open(outputfile, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR, S_IWUSR);
+	    if (fd == -1) {
+            	perror("open");
+            	exit(EXIT_FAILURE);
+        	}
+
+        // Redirect stdout to the file
+            if (dup2(fd, STDOUT_FILENO) == -1) {
+            	perror("dup2");
+            	close(fd);
+            	exit(EXIT_FAILURE);
+            }
+        // Close the file descriptor (no longer needed after dup2)
+            close(fd);
+
+        // Execute the command
+            execv(command[0], command);
+        // If execv returns, it means an error occurred
+            perror("execv");
+            exit(EXIT_FAILURE);
+        } 
+	else {
+        // Parent process: wait for the child to complete
+        	int status;
+        	if (waitpid(pid, &status, 0) == -1) {
+            		perror("waitpid");
+         	   	return false;
+        	}
+
+        // Check if the child exited successfully
+        	if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
+            		return true;
+        	} else {
+            		fprintf(stderr, "Command failed with exit status %d\n", WEXITSTATUS(status));
+            		return false;
+        	}
+    	}
 
     return true;
 }
